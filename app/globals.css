@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  /* Ink + cream + brand red. High contrast over video. */
+  --color-bg-deep: #06080a;
+  --color-bg-screen: #0d1216;
+  --color-bg-card: #92b6c5;          /* dust blue paper */
+  --color-phosphor: #f1e9c8;         /* warm cream text */
+  --color-phosphor-dim: rgba(246, 240, 220, 0.6);
+  --color-ink: #1c2a30;              /* deep teal — used as ink on cream */
+  /* Brand pop — was orange/red, now mid-teal to match logo border */
+  --color-accent-red: #3d7c8d;
+  --color-accent-teal: #2c4751;
+  --color-accent-amber: #e3b251;
+
+  --font-display: "Heebo", system-ui, sans-serif;
+  --font-body: "Assistant", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: var(--color-bg-deep);
+  color: var(--color-phosphor);
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75), 0 0 14px rgba(0, 0, 0, 0.55);
+}
+
+/* Drop shadow on text inside opaque cards (already legible, shadow looks muddy) */
+.no-text-shadow,
+.no-text-shadow * {
+  text-shadow: none;
+}
+
+html {
+  direction: rtl;
+}
+
+::selection {
+  background: var(--color-phosphor);
+  color: var(--color-ink);
+  text-shadow: none;
+}
+
+mark.match {
+  background: transparent;
+  color: var(--color-accent-amber);
+  font-weight: 700;
+  border-bottom: 2px solid var(--color-accent-amber);
+  padding: 0 1px 1px 1px;
+  border-radius: 0;
+  box-decoration-break: clone;
+}
+
+@keyframes caret-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
