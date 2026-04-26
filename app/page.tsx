@@ -89,7 +89,7 @@ export default function Home() {
         )}
       </motion.header>
 
-      <main className="flex-1 relative">
+      <main className="flex-1 relative pb-20">
         <AnimatePresence mode="wait" initial={false}>
           {mode === "results" && (
             <motion.section
