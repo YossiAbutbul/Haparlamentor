@@ -1,21 +1,41 @@
 export function NoSignal({ query }: { query: string }) {
   return (
     <div className="flex flex-col items-center justify-center py-16 px-6 text-center min-h-[40vh]">
-      <div className="no-text-shadow bg-black/65 backdrop-blur-md px-8 py-10 border border-phosphor/15 max-w-lg w-full">
-        <div className="inline-block bg-accent-red text-phosphor font-mono text-[10px] tracking-[0.25em] uppercase mb-4 px-2 py-0.5">
-          אין שידור
+      <article
+        className="no-text-shadow relative rounded-lg overflow-hidden max-w-lg w-full"
+        style={{
+          background: "rgba(28,42,48,0.72)",
+          backdropFilter: "blur(14px)",
+          WebkitBackdropFilter: "blur(14px)",
+          boxShadow:
+            "inset 0 0 0 1px rgba(241,233,200,0.14), 0 12px 28px -16px rgba(0,0,0,0.6)",
+        }}
+      >
+        <div className="px-6 md:px-9 py-6 md:py-7 text-phosphor text-right" dir="rtl">
+          <header className="mb-5 flex items-baseline gap-3">
+            <span
+              className="font-mono text-[11px] tracking-[0.22em] uppercase tabular-nums"
+              style={{ color: "var(--color-accent-red-bright)" }}
+            >
+              אין שידור
+            </span>
+            <span aria-hidden className="text-phosphor/25 select-none">⁄</span>
+            <span className="font-display text-[15px] md:text-base font-semibold text-phosphor">
+              לא נמצאו תוצאות
+            </span>
+          </header>
+
+          <p className="font-display text-[22px] md:text-[26px] leading-[1.45] font-medium">
+            המשפט{" "}
+            <mark className="match">{query}</mark>{" "}
+            לא הופיע באף פרק שנסרק.
+          </p>
+
+          <p className="mt-4 text-[15px] text-phosphor/45">
+            נסה ניסוח אחר או חתוך לחלק ממנו.
+          </p>
         </div>
-        <h2 className="font-display text-2xl md:text-3xl font-bold text-phosphor mb-3">
-          לא נמצאו תוצאות
-        </h2>
-        <p className="text-phosphor/60 leading-relaxed">
-          המשפט{" "}
-          <span className="bg-accent-red/90 text-phosphor px-1.5 py-0.5">
-            {query}
-          </span>{" "}
-          לא הופיע באף פרק שנסרק. נסה ניסוח אחר או חתוך לחלק ממנו.
-        </p>
-      </div>
+      </article>
     </div>
   );
 }

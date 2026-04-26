@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import clsx from "clsx";
+import { X } from "lucide-react";
 
 export function SearchInput({
   value,
@@ -62,6 +63,26 @@ export function SearchInput({
             size === "hero" ? "text-2xl md:text-4xl" : "text-base md:text-xl",
           )}
         />
+        {value.length > 0 && (
+          <button
+            type="button"
+            onClick={() => {
+              onChange("");
+              ref.current?.focus();
+            }}
+            aria-label="נקה חיפוש"
+            className={clsx(
+              "shrink-0 mr-2 cursor-pointer rounded-md p-1 text-phosphor/55 hover:text-phosphor hover:bg-phosphor/10 transition-colors",
+              size === "hero" ? "" : "p-0.5",
+            )}
+          >
+            <X
+              className={clsx(size === "hero" ? "h-5 w-5" : "h-4 w-4")}
+              strokeWidth={2}
+              aria-hidden
+            />
+          </button>
+        )}
       </div>
     </label>
   );

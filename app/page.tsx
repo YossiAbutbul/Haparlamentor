@@ -4,7 +4,6 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
 import { Stage } from "@/components/Stage";
 import { ChannelBug } from "@/components/ChannelBug";
-import { LowerThird } from "@/components/LowerThird";
 import { Logo } from "@/components/Logo";
 import { SearchInput } from "@/components/SearchInput";
 import { ResultsList } from "@/components/ResultsList";
@@ -46,23 +45,12 @@ export default function Home() {
             : "sticky top-0 z-20 border-b border-phosphor/10 bg-black/55 backdrop-blur-md px-4 md:px-6 py-3 md:py-4 flex items-center gap-4 md:gap-6"
         }
       >
-        {mode === "idle" && (
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-0"
-            style={{
-              zIndex: -1,
-              background:
-                "radial-gradient(ellipse 70% 60% at 50% 45%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 70%)",
-            }}
-          />
-        )}
         {mode === "idle" ? (
           <Logo size="hero" />
         ) : (
           <button
             onClick={() => setQuery("")}
-            className="shrink-0 hover:opacity-80 transition-opacity"
+            className="shrink-0 cursor-pointer hover:opacity-80 transition-opacity"
             aria-label="חזור למסך הראשי"
           >
             <Logo size="small" />
@@ -83,7 +71,7 @@ export default function Home() {
         </motion.div>
 
         {mode === "idle" && (
-          <p className="no-text-shadow inline-block bg-black/60 backdrop-blur-sm border border-phosphor/15 px-4 py-2 font-mono text-[13px] tracking-[0.22em] text-phosphor text-center">
+          <p className="no-text-shadow inline-block bg-black/60 backdrop-blur-sm border border-phosphor/15 px-4 py-2 font-display text-[15px] md:text-base font-medium tracking-tight text-phosphor/85 text-center" dir="rtl">
             הקלד משפט · המערכת תמצא את הפרק והדקה
           </p>
         )}
@@ -109,7 +97,6 @@ export default function Home() {
         </AnimatePresence>
       </main>
 
-      {mode === "idle" && <LowerThird caption="חיפוש משפטים מתוך כל פרקי הסדרה" />}
     </Stage>
   );
 }

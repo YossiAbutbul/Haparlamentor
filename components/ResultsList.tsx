@@ -18,13 +18,15 @@ export function ResultsList({
         <span>תוצאות · {hits.length}</span>
         <span className="flex-1 h-px bg-phosphor/15" />
       </div>
-      {hits.map((h, i) => (
-        <ResultCard
-          key={`${h.episode.id}-${h.lineIndex}-${i}`}
-          hit={h}
-          query={query}
-        />
-      ))}
+      <div className="flex flex-col gap-4">
+        {hits.map((h, i) => (
+          <ResultCard
+            key={`${h.episode.id}-${h.lineIndex}-${i}`}
+            hit={h}
+            query={query}
+          />
+        ))}
+      </div>
     </div>
   );
 }
