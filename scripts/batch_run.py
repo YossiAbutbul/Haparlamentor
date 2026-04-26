@@ -85,7 +85,7 @@ def download(vcm: str, m3u8: str) -> Path:
     return found
 
 
-def transcribe(vcm: str, audio: Path) -> None:
+def transcribe(vcm: str, audio: Path, txt_path: Path) -> None:
     cmd = [
         sys.executable, "-u",
         str(REPO_ROOT / "scripts" / "transcribe.py"),
@@ -98,8 +98,16 @@ def transcribe(vcm: str, audio: Path) -> None:
         "PYTHONUNBUFFERED": "1",
     }
     rc = subprocess.call(cmd, env=env)
-    if rc != 0:
-        sys.exit(f"transcribe failed for {vcm} (exit {rc})")
+    if rc == 0:
+        return
+    # Known ctranslate2 cleanup crash on Windows (STATUS_STACK_BUFFER_OVERRUN
+    # = 3221226505). Transcribe writes file incrementally; if it landed on
+    # disk with content, treat as success.
+    if txt_path.exists() and txt_path.stat().st_size > 0:
+        print(f"  [warn] transcribe.py crashed on cleanup (exit {rc}), "
+              f"but {txt_path.name} written — continuing")
+        return
+    sys.exit(f"transcribe failed for {vcm} (exit {rc})")
 
 
 def parse_args() -> tuple[int, int | None]:
@@ -139,7 +147,7 @@ def main() -> None:
             print(f"  [stop] reached limit of {limit}")
             break
         audio = find_audio(vcm) or download(vcm, url)
-        transcribe(vcm, audio)
+        transcribe(vcm, audio, txt)
         done += 1
 
     print(f"done: {done} new, {skipped} skipped")

@@ -50,7 +50,7 @@ def fmt_time(t: float) -> str:
     return f"{h:02d}:{m:02d}:{s:02d}" if h else f"{m:02d}:{s:02d}"
 
 
-def transcribe(mp3_path: Path) -> list[tuple[float, str]]:
+def transcribe(mp3_path: Path, out_path: Path) -> int:
     model = WhisperModel(MODEL_NAME, device="auto", compute_type="auto")
     segments, info = model.transcribe(
         str(mp3_path),
@@ -60,14 +60,17 @@ def transcribe(mp3_path: Path) -> list[tuple[float, str]]:
         condition_on_previous_text=False,
     )
     print(f"detected language: {info.language} ({info.language_probability:.2f})")
-    out = []
-    for seg in segments:
-        text = seg.text.strip()
-        if not text:
-            continue
-        out.append((seg.start, text))
-        print(f"  [{fmt_time(seg.start)}] {text}")
-    return out
+    n = 0
+    with out_path.open("w", encoding="utf-8") as fh:
+        for seg in segments:
+            text = seg.text.strip()
+            if not text:
+                continue
+            fh.write(f"{fmt_time(seg.start)}  {text}\n")
+            fh.flush()
+            print(f"  [{fmt_time(seg.start)}] {text}")
+            n += 1
+    return n
 
 
 def main() -> None:
@@ -83,13 +86,13 @@ def main() -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / f"{vcm_id}.txt"
 
-    cues = transcribe(mp3)
-    out_path.write_text(
-        "\n".join(f"{fmt_time(t)}  {text}" for t, text in cues) + "\n",
-        encoding="utf-8",
-    )
-    print(f"wrote {out_path.relative_to(REPO_ROOT)} ({len(cues)} cues)")
+    n = transcribe(mp3, out_path)
+    print(f"wrote {out_path.relative_to(REPO_ROOT)} ({n} cues)")
     print("Next: python scripts/build_db.py")
+    sys.stdout.flush()
+    sys.stderr.flush()
+    import os as _os
+    _os._exit(0)
 
 
 if __name__ == "__main__":
