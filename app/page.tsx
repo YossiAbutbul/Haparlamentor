@@ -1,9 +1,10 @@
 "use client";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
 import { Stage } from "@/components/Stage";
 import { ChannelBug } from "@/components/ChannelBug";
+import { Footer } from "@/components/Footer";
 import { Logo } from "@/components/Logo";
 import { SearchInput } from "@/components/SearchInput";
 import { ResultsList } from "@/components/ResultsList";
@@ -19,6 +20,16 @@ const SHORTS = DB.seasons.flatMap((s) => s.shorts);
 export default function Home() {
   const [query, setQuery] = useState("");
   const reduce = useReducedMotion();
+  const eggPrinted = useRef(false);
+
+  useEffect(() => {
+    if (eggPrinted.current) return;
+    eggPrinted.current = true;
+    const big = "font-size:18px;font-weight:bold;color:#6fb8cc;";
+    const sub = "font-size:12px;color:#e3b251;";
+    console.log("%cפליז מאקו אל תתבעו אותי 🙏", big);
+    console.log("%cפרויקט מעריצים, לא רשמי, לא מסחרי. כל הזכויות לקשת 12 / מאקו.", sub);
+  }, []);
 
   const hits = useMemo(() => search(query, SHORTS), [query]);
   const mode: "idle" | "results" | "empty" =
@@ -98,6 +109,7 @@ export default function Home() {
         </AnimatePresence>
       </main>
 
+      <Footer />
     </Stage>
   );
 }
