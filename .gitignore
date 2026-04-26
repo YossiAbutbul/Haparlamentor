@@ -8,3 +8,4 @@ out/
 scripts/audio/
 scripts/.venv/
 scripts/__pycache__/
+data/*/m3u8.json

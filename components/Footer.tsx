@@ -6,7 +6,7 @@ export function Footer() {
       className="no-text-shadow relative z-10 mt-12 border-t border-phosphor/10 px-6 py-5"
       dir="rtl"
     >
-      <div className="mx-auto max-w-5xl flex flex-col gap-2 md:flex-row md:items-center md:justify-between text-[12px] text-phosphor/45 font-display">
+      <div className="mx-auto max-w-5xl flex items-center justify-between gap-4 text-[12px] text-phosphor/45 font-display">
         <p>
           התמלולים והתוכן המקורי שייכים ל
           <a
