@@ -66,7 +66,8 @@ def download(vcm: str, m3u8: str) -> Path:
     print(f"  downloading {vcm}")
     rc = subprocess.call(cmd)
     if rc != 0:
-        sys.exit(f"yt-dlp failed for {vcm} (exit {rc})")
+        print(f"  [warn] yt-dlp failed for {vcm} (exit {rc}) — skipping")
+        return None  # type: ignore[return-value]
 
     found = find_audio(vcm)
     if not found:
@@ -147,6 +148,8 @@ def main() -> None:
             print(f"  [stop] reached limit of {limit}")
             break
         audio = find_audio(vcm) or download(vcm, url)
+        if audio is None:
+            continue
         transcribe(vcm, audio, txt)
         done += 1
 
