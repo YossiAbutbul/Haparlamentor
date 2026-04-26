@@ -23,8 +23,12 @@ import subprocess
 import sys
 from pathlib import Path
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
-sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
+sys.stdout = io.TextIOWrapper(
+    sys.stdout.buffer, encoding="utf-8", errors="replace", line_buffering=True
+)
+sys.stderr = io.TextIOWrapper(
+    sys.stderr.buffer, encoding="utf-8", errors="replace", line_buffering=True
+)
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 AUDIO = REPO_ROOT / "scripts" / "audio"
@@ -82,12 +86,16 @@ def download(vcm: str, m3u8: str) -> Path:
 
 def transcribe(vcm: str, audio: Path) -> None:
     cmd = [
-        sys.executable,
+        sys.executable, "-u",
         str(REPO_ROOT / "scripts" / "transcribe.py"),
         vcm,
         str(audio),
     ]
-    env = {**__import__("os").environ, "PYTHONIOENCODING": "utf-8"}
+    env = {
+        **__import__("os").environ,
+        "PYTHONIOENCODING": "utf-8",
+        "PYTHONUNBUFFERED": "1",
+    }
     rc = subprocess.call(cmd, env=env)
     if rc != 0:
         sys.exit(f"transcribe failed for {vcm} (exit {rc})")
