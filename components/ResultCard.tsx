@@ -61,23 +61,21 @@ export function ResultCard({ hit, query }: { hit: SearchHit; query: string }) {
 
         {/* row 2: content + button */}
         <div className="grid grid-cols-[1fr_auto] gap-6 md:gap-8 items-center">
-          <div className="min-w-0">
-            <p
-              className="font-display text-[22px] md:text-[26px] leading-[1.45] font-medium"
-              dir="rtl"
-            >
+          <div className="min-w-0" dir="rtl">
+            {hit.context.before && (
+              <p className="truncate text-[15px] text-phosphor/45 mb-2">
+                {hit.context.before.text}
+              </p>
+            )}
+
+            <p className="font-display text-[22px] md:text-[26px] leading-[1.45] font-medium">
               {highlight(hit.line.text, query)}
             </p>
 
-            {(hit.context.before || hit.context.after) && (
-              <div className="mt-4 space-y-1 text-[15px] text-phosphor/45" dir="rtl">
-                {hit.context.before && (
-                  <p className="truncate">{hit.context.before.text}</p>
-                )}
-                {hit.context.after && (
-                  <p className="truncate">{hit.context.after.text}</p>
-                )}
-              </div>
+            {hit.context.after && (
+              <p className="truncate text-[15px] text-phosphor/45 mt-2">
+                {hit.context.after.text}
+              </p>
             )}
           </div>
 
