@@ -21,7 +21,7 @@ export function ResultsList({
       <div className="flex flex-col gap-4">
         {hits.map((h, i) => (
           <ResultCard
-            key={`${h.episode.id}-${h.lineIndex}-${i}`}
+            key={`${h.short.vcmId}-${h.lineIndex}-${i}`}
             hit={h}
             query={query}
           />

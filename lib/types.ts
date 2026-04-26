@@ -2,20 +2,19 @@ export type TranscriptLine = {
   t: number;
   speaker?: string;
   text: string;
-  part?: string;
 };
 
-export type Episode = {
-  id: string;
+export type Short = {
+  vcmId: string;
+  title: string;
+  url: string;
+  duration: string;
   season: number;
-  episode: number;
-  title?: string;
-  makoUrl: string;
   lines: TranscriptLine[];
 };
 
 export type SearchHit = {
-  episode: Episode;
+  short: Short;
   lineIndex: number;
   line: TranscriptLine;
   context: { before?: TranscriptLine; after?: TranscriptLine };

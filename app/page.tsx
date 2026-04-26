@@ -10,16 +10,16 @@ import { ResultsList } from "@/components/ResultsList";
 import { NoSignal } from "@/components/NoSignal";
 
 import { search } from "@/lib/search";
-import type { Episode } from "@/lib/types";
-import episodesJson from "@/public/mock/transcripts.json";
+import type { Short } from "@/lib/types";
+import shortsJson from "@/public/mock/shorts.json";
 
-const EPISODES = episodesJson as Episode[];
+const SHORTS = shortsJson as Short[];
 
 export default function Home() {
   const [query, setQuery] = useState("");
   const reduce = useReducedMotion();
 
-  const hits = useMemo(() => search(query, EPISODES), [query]);
+  const hits = useMemo(() => search(query, SHORTS), [query]);
   const mode: "idle" | "results" | "empty" =
     query.trim().length < 2 ? "idle" : hits.length > 0 ? "results" : "empty";
 
