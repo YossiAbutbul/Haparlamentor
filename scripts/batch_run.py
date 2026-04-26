@@ -13,7 +13,8 @@ For each entry in m3u8.json:
 Then rebuilds public/data/db.json.
 
 Usage:
-    python scripts/batch_run.py 1
+    python scripts/batch_run.py 1            # process all
+    python scripts/batch_run.py 1 --limit 4  # cap at 4 new transcripts this run
 """
 
 import io
@@ -101,10 +102,19 @@ def transcribe(vcm: str, audio: Path) -> None:
         sys.exit(f"transcribe failed for {vcm} (exit {rc})")
 
 
+def parse_args() -> tuple[int, int | None]:
+    args = sys.argv[1:]
+    if not args:
+        sys.exit("Usage: python scripts/batch_run.py <season_number> [--limit N]")
+    season = int(args[0])
+    limit: int | None = None
+    if len(args) >= 3 and args[1] == "--limit":
+        limit = int(args[2])
+    return season, limit
+
+
 def main() -> None:
-    if len(sys.argv) != 2:
-        sys.exit("Usage: python scripts/batch_run.py <season_number>")
-    season = int(sys.argv[1])
+    season, limit = parse_args()
     season_dir = REPO_ROOT / "data" / f"s{season}"
     m3u8_path = season_dir / "m3u8.json"
     transcripts_dir = season_dir / "transcripts"
@@ -114,7 +124,8 @@ def main() -> None:
     transcripts_dir.mkdir(parents=True, exist_ok=True)
 
     mapping = json.loads(m3u8_path.read_text(encoding="utf-8"))
-    print(f"season {season}: {len(mapping)} m3u8 entries")
+    cap_msg = f", limit {limit}" if limit else ""
+    print(f"season {season}: {len(mapping)} m3u8 entries{cap_msg}")
 
     done = 0
     skipped = 0
@@ -124,6 +135,9 @@ def main() -> None:
             print(f"  [skip] {vcm} (transcript exists)")
             skipped += 1
             continue
+        if limit is not None and done >= limit:
+            print(f"  [stop] reached limit of {limit}")
+            break
         audio = find_audio(vcm) or download(vcm, url)
         transcribe(vcm, audio)
         done += 1

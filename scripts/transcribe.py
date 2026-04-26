@@ -32,7 +32,7 @@ from faster_whisper import WhisperModel
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA = REPO_ROOT / "data"
-MODEL_NAME = "large-v3"
+MODEL_NAME = "large-v3-turbo"
 
 
 def find_season(vcm_id: str) -> int:
