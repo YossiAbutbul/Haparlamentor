@@ -1,0 +1,711 @@
+{
+  "seasons": [
+    {
+      "season": 1,
+      "shorts": [
+        {
+          "vcmId": "02067ffd1954a310VgnVCM2000002a0c10acRCRD",
+          "title": "זיתים - נפל בעריכה",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-02067ffd1954a31006.htm",
+          "duration": "01:05",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "04e8c88824098310VgnVCM2000002a0c10acRCRD",
+          "title": "הזמנה לחתונה",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-04e8c8882409831006.htm",
+          "duration": "05:15",
+          "season": 1,
+          "lines": [
+            {
+              "t": 18.0,
+              "text": "זאת לא חתונה, זאת הצגה."
+            },
+            {
+              "t": 30.0,
+              "text": "החתונה היא הצגה הכי טובה."
+            }
+          ]
+        },
+        {
+          "vcmId": "074f2ec408768310VgnVCM2000002a0c10acRCRD",
+          "title": "סוף הפרק",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-074f2ec40876831006.htm",
+          "duration": "01:22",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "0a48c88824098310VgnVCM2000002a0c10acRCRD",
+          "title": "ליידי",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-0a48c8882409831006.htm",
+          "duration": "04:46",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "151f2ec408768310VgnVCM2000002a0c10acRCRD",
+          "title": "זוגיות",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-151f2ec40876831006.htm",
+          "duration": "05:17",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "1c9018ee3abf8310VgnVCM2000002a0c10acRCRD",
+          "title": "אמציה ושאולי במונית - נפל בעריכה",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-1c9018ee3abf831006.htm",
+          "duration": "01:13",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "3389c88824098310VgnVCM2000002a0c10acRCRD",
+          "title": "הצגה יומית ",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-3389c8882409831006.htm",
+          "duration": "05:07",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "3579a54e924b8310VgnVCM2000002a0c10acRCRD",
+          "title": "מלחמה",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-3579a54e924b831006.htm",
+          "duration": "01:22",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "3641fef1ca6f8310VgnVCM2000002a0c10acRCRD",
+          "title": "הבדיקה",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-3641fef1ca6f831006.htm",
+          "duration": "05:47",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "3b5da54e924b8310VgnVCM2000002a0c10acRCRD",
+          "title": "פולין",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-3b5da54e924b831006.htm",
+          "duration": "05:24",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "3b6c18ee3abf8310VgnVCM2000002a0c10acRCRD",
+          "title": "הנקמה של ראובן - נפל בעריכה",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-3b6c18ee3abf831006.htm",
+          "duration": "01:19",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "3fae2ec408768310VgnVCM2000002a0c10acRCRD",
+          "title": "הספארי",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-3fae2ec40876831006.htm",
+          "duration": "05:49",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "432ffef1ca6f8310VgnVCM2000002a0c10acRCRD",
+          "title": "המונית ",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-432ffef1ca6f831006.htm",
+          "duration": "06:17",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "445e2ec408768310VgnVCM2000002a0c10acRCRD",
+          "title": "שבעה",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-445e2ec40876831006.htm",
+          "duration": "04:18",
+          "season": 1,
+          "lines": [
+            {
+              "t": 29.0,
+              "text": "משתתף בצערכם."
+            },
+            {
+              "t": 32.0,
+              "text": "לא קל לאבד אמא."
+            },
+            {
+              "t": 34.0,
+              "text": "הייתה אישה מקסימה."
+            },
+            {
+              "t": 35.0,
+              "text": "אישה קשה, מרה."
+            },
+            {
+              "t": 44.0,
+              "text": "ואיך אתם?"
+            },
+            {
+              "t": 47.0,
+              "text": "עצובים, איך נהיה? אמא שלנו מתה."
+            },
+            {
+              "t": 50.0,
+              "text": "אז היא... אמא ממש גידלה אותנו מגיל אפס."
+            },
+            {
+              "t": 54.0,
+              "text": "הייתה אמא של כולנו."
+            },
+            {
+              "t": 56.0,
+              "text": "חוץ ממנו, זה אבא שלנו."
+            },
+            {
+              "t": 58.0,
+              "text": "היא הייתה אשתו, לא אמא שלו."
+            },
+            {
+              "t": 60.0,
+              "text": "הוא היה בעלה."
+            },
+            {
+              "t": 61.0,
+              "text": "הוא היה לו אמא משלו."
+            },
+            {
+              "t": 62.0,
+              "text": "והיא מתה, ועכשיו גם שלנו מתה."
+            },
+            {
+              "t": 64.0,
+              "text": "קשה"
+            },
+            {
+              "t": 67.0,
+              "text": "בטח קשה"
+            },
+            {
+              "t": 68.0,
+              "text": "אבל כשאימא שלך תמוד תבין"
+            },
+            {
+              "t": 69.0,
+              "text": "מה להציע לך?"
+            },
+            {
+              "t": 73.0,
+              "text": "משהו מלוח? מלח? משהו קר? קרח?"
+            },
+            {
+              "t": 76.0,
+              "text": "משהו חריף? טבסקו? משהו קטן? קטנייה?"
+            },
+            {
+              "t": 79.0,
+              "text": "אני בסדר תודה"
+            },
+            {
+              "t": 79.0,
+              "text": "בדרך הבית אחרי העבודה"
+            },
+            {
+              "t": 82.0,
+              "text": "אתה רוצה להניח ראש?"
+            },
+            {
+              "t": 84.0,
+              "text": "לא לא"
+            },
+            {
+              "t": 85.0,
+              "text": "נפנה לך את החדר של אימא"
+            },
+            {
+              "t": 87.0,
+              "text": "לא לא רק רציתי להגיד שאני משתתף בצערכם"
+            },
+            {
+              "t": 90.0,
+              "text": "תגיד לי מאיפה אתה מכיר את אימא?"
+            },
+            {
+              "t": 93.0,
+              "text": "מה הקשר שלך לאימא?"
+            },
+            {
+              "t": 94.0,
+              "text": "אני השכן פה מלמעלה"
+            },
+            {
+              "t": 96.0,
+              "text": "אה, אתה זה מיקו,\"ש"
+            },
+            {
+              "t": 105.0,
+              "text": "אהה, זה מיקו,\"ש"
+            },
+            {
+              "t": 109.0,
+              "text": "ה Phillips"
+            },
+            {
+              "t": 115.0,
+              "text": "לא, אין לי אופניים"
+            },
+            {
+              "t": 116.0,
+              "text": "בטוח?"
+            },
+            {
+              "t": 117.0,
+              "text": "בטוח?"
+            },
+            {
+              "t": 118.0,
+              "text": "בטוח?"
+            },
+            {
+              "t": 119.0,
+              "text": "בטוח, בטוח"
+            },
+            {
+              "t": 120.0,
+              "text": "בטוח, בטוח, בטוח?!"
+            },
+            {
+              "t": 121.0,
+              "text": "בטוח-בטוח, כן, בטוח"
+            },
+            {
+              "t": 123.0,
+              "text": "לא, אבא, הוא אומר שאין לו אופניים."
+            },
+            {
+              "t": 127.0,
+              "text": "אבא גם אומר שראותך מסתובב עם אופניים כחול."
+            },
+            {
+              "t": 130.0,
+              "text": "אין לי אופניים."
+            },
+            {
+              "t": 133.0,
+              "text": "אבא, אבא, אבא."
+            },
+            {
+              "t": 135.0,
+              "text": "רגע, מה זה?"
+            },
+            {
+              "t": 136.0,
+              "text": "זה הורח, איזה מין דיבורים אלה?"
+            },
+            {
+              "t": 138.0,
+              "text": "הוא אומר שהוא יהרוג אותך."
+            },
+            {
+              "t": 143.0,
+              "text": "טוב, נראה לי אני..."
+            },
+            {
+              "t": 144.0,
+              "text": "תגיד, ומה הסיפור עם הלובי?"
+            },
+            {
+              "t": 146.0,
+              "text": "מה האנטי שלכם ללובי?"
+            },
+            {
+              "t": 147.0,
+              "text": "כן."
+            },
+            {
+              "t": 148.0,
+              "text": "פשוט רוצים לעשות הלובי יותר יפה,"
+            },
+            {
+              "t": 149.0,
+              "text": "שיהיה יותר יפה בעין לכולם."
+            },
+            {
+              "t": 150.0,
+              "text": "זה יעלה את הערך של הדירות, גם את שלכם."
+            },
+            {
+              "t": 153.0,
+              "text": "אין אנטי, זה ממש לא..."
+            },
+            {
+              "t": 155.0,
+              "text": "כל מה שאמרנו, זה שאם כבר עושים שיפוץ,"
+            },
+            {
+              "t": 157.0,
+              "text": "אז למה שלא גם נעשה מעלית?"
+            },
+            {
+              "t": 159.0,
+              "text": "מה אנחנו נעשה עם מעלית? אנחנו גרים בקומה א',"
+            },
+            {
+              "t": 161.0,
+              "text": "לאן העלית? רק אתה תהנה מזה,"
+            },
+            {
+              "t": 163.0,
+              "text": "אתה ואבא שלך."
+            },
+            {
+              "t": 164.0,
+              "text": "אתה רוצה שיהיה לך יותר קל לעלות את האופניים."
+            },
+            {
+              "t": 166.0,
+              "text": "אין לי אופניים."
+            },
+            {
+              "t": 168.0,
+              "text": "אבא, אבא, אתה לא תשרוף פה אף אחד."
+            },
+            {
+              "t": 171.0,
+              "text": "אתה בקושי הולך, אתה תשרוף אנשים."
+            },
+            {
+              "t": 173.0,
+              "text": "גם אם שהיא גאון חדש בבוקר,"
+            },
+            {
+              "t": 174.0,
+              "text": "הוא שורף אנשים."
+            },
+            {
+              "t": 175.0,
+              "text": "אתה בקושי חולץ נעליים,"
+            },
+            {
+              "t": 176.0,
+              "text": "אתה תשרוף בן אדם?"
+            },
+            {
+              "t": 177.0,
+              "text": "הוא בן אדם? מה קרה לך?"
+            },
+            {
+              "t": 178.0,
+              "text": "נראה לי שאני אזוז ו..."
+            },
+            {
+              "t": 180.0,
+              "text": "אה, אתה..."
+            },
+            {
+              "t": 181.0,
+              "text": "תודה שבאת."
+            },
+            {
+              "t": 182.0,
+              "text": "זה אין בעיה."
+            },
+            {
+              "t": 187.0,
+              "text": "אנחנו לא עושים לך מעלית, אבא."
+            },
+            {
+              "t": 189.0,
+              "text": "יש לך שלושה חודשים לחיות."
+            },
+            {
+              "t": 190.0,
+              "text": "פחות, הרופא אמר עד חנוכה,"
+            },
+            {
+              "t": 192.0,
+              "text": "אתה כבר לא איתנו."
+            },
+            {
+              "t": 193.0,
+              "text": "עד שתהיה מעלית, כבר נשב עליך, שבעה."
+            },
+            {
+              "t": 195.0,
+              "text": "אבא שלנו חולי אגוסיס."
+            },
+            {
+              "t": 196.0,
+              "text": "שאולי."
+            },
+            {
+              "t": 198.0,
+              "text": "אבא שלנו יצא לזרח."
+            },
+            {
+              "t": 200.0,
+              "text": "מאוד."
+            },
+            {
+              "t": 202.0,
+              "text": "מצטער, אני..."
+            },
+            {
+              "t": 204.0,
+              "text": "טוב."
+            },
+            {
+              "t": 205.0,
+              "text": "תודה שבאת, ועשה טוב, תחשוב על הלובי."
+            },
+            {
+              "t": 210.0,
+              "text": "תבדוק אם אין לך אופניים כחול."
+            },
+            {
+              "t": 212.0,
+              "text": "דש לאבא."
+            },
+            {
+              "t": 225.0,
+              "text": "אתה לא יכול לעלות לאמא אבא."
+            },
+            {
+              "t": 227.0,
+              "text": "היא בשמיים."
+            },
+            {
+              "t": 230.0,
+              "text": "זה לא קשור למעלית, אמא בשמיים."
+            },
+            {
+              "t": 232.0,
+              "text": "אתה לא יכול טכנית להגיע אליה, ביולוגית."
+            },
+            {
+              "t": 238.0,
+              "text": "בסדר, בסדר."
+            },
+            {
+              "t": 240.0,
+              "text": "תראה אותה עוד שלושה חודשים בשמיים, תשרוף אותה, טוב?"
+            },
+            {
+              "t": 243.0,
+              "text": "יופי."
+            },
+            {
+              "t": 244.0,
+              "text": "איך לדם? זה מה שעשי."
+            },
+            {
+              "t": 246.0,
+              "text": "יאללה, אני אקרא לך איך לדם, באטי."
+            },
+            {
+              "t": 248.0,
+              "text": "אז אני עושה ארוחת ערב."
+            },
+            {
+              "t": 249.0,
+              "text": "אתה רוצה בצעה? מה אתה רוצה?"
+            },
+            {
+              "t": 251.0,
+              "text": "אחת או שתיים, נשמע."
+            },
+            {
+              "t": 253.0,
+              "text": "למה לא התלהגת דלות?"
+            },
+            {
+              "t": 255.0,
+              "text": "מה לא התלהגתי? לא, המנורה סלופה, זה דלות מהבוקר."
+            }
+          ]
+        },
+        {
+          "vcmId": "48164b7c124b8310VgnVCM2000002a0c10acRCRD",
+          "title": "שבעה 2",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-48164b7c124b831006.htm",
+          "duration": "06:47",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "4d236f07e34b8310VgnVCM2000002a0c10acRCRD",
+          "title": "בגידה - נפל בעריכה",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-4d236f07e34b831006.htm",
+          "duration": "00:42",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "53ee2ec408768310VgnVCM2000002a0c10acRCRD",
+          "title": "בלי נשימה",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-53ee2ec40876831006.htm",
+          "duration": "04:14",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "63974b7c124b8310VgnVCM2000002a0c10acRCRD",
+          "title": "הקטור המלך",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-63974b7c124b831006.htm",
+          "duration": "03:38",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "63af54ba4ddb8910VgnVCM200000650a10acRCRD",
+          "title": "פתיח הפרלמנט",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-63af54ba4ddb891026.htm",
+          "duration": "00:27",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "63c5a4e7a1a88310VgnVCM2000002a0c10acRCRD",
+          "title": "דוקו - נפל בעריכה",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-63c5a4e7a1a8831006.htm",
+          "duration": "01:50",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "671e2ec408768310VgnVCM2000002a0c10acRCRD",
+          "title": "הדירה",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-671e2ec40876831006.htm",
+          "duration": "07:16",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "67cdfef1ca6f8310VgnVCM2000002a0c10acRCRD",
+          "title": "מזרקות",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-67cdfef1ca6f831006.htm",
+          "duration": "03:28",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "85a518ee3abf8310VgnVCM2000002a0c10acRCRD",
+          "title": "רב - נפל בעריכה",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-85a518ee3abf831006.htm",
+          "duration": "00:53",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "86034b7c124b8310VgnVCM2000002a0c10acRCRD",
+          "title": "בגידה",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-86034b7c124b831006.htm",
+          "duration": "04:58",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "a77afef1ca6f8310VgnVCM2000002a0c10acRCRD",
+          "title": "אסוציאציות",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-a77afef1ca6f831006.htm",
+          "duration": "04:56",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "b4f7a4e7a1a88310VgnVCM2000002a0c10acRCRD",
+          "title": "הארטיסט - נפל בעריכה",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-b4f7a4e7a1a8831006.htm",
+          "duration": "01:03",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "b53a18ee3abf8310VgnVCM2000002a0c10acRCRD",
+          "title": "אסוציאציות - נפל בעריכה",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-b53a18ee3abf831006.htm",
+          "duration": "00:50",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "b60bfef1ca6f8310VgnVCM2000002a0c10acRCRD",
+          "title": "יום כיפור",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-b60bfef1ca6f831006.htm",
+          "duration": "06:13",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "bd4b18ee3abf8310VgnVCM2000002a0c10acRCRD",
+          "title": "זינגרלה - נפל בעריכה",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-bd4b18ee3abf831006.htm",
+          "duration": "00:52",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "bfe46f07e34b8310VgnVCM2000002a0c10acRCRD",
+          "title": "שבעה – נפל בעריכה",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-bfe46f07e34b831006.htm",
+          "duration": "01:51",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "d06ca54e924b8310VgnVCM2000002a0c10acRCRD",
+          "title": "לילה טוב",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-d06ca54e924b831006.htm",
+          "duration": "03:40",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "d15ac88824098310VgnVCM2000002a0c10acRCRD",
+          "title": "פרחים ",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-d15ac8882409831006.htm",
+          "duration": "01:49",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "d400fef1ca6f8310VgnVCM2000002a0c10acRCRD",
+          "title": "שקופיות",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-d400fef1ca6f831006.htm",
+          "duration": "01:56",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "d6b8765942a88310VgnVCM2000002a0c10acRCRD",
+          "title": "הזמנה לחתונה - נפל בעריכה",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-d6b8765942a8831006.htm",
+          "duration": "02:03",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "e04d254a63098310VgnVCM2000002a0c10acRCRD",
+          "title": "ג'ימי",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-e04d254a6309831006.htm",
+          "duration": "05:50",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "fb1b254a63098310VgnVCM2000002a0c10acRCRD",
+          "title": "ילדות ",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-fb1b254a6309831006.htm",
+          "duration": "03:28",
+          "season": 1,
+          "lines": []
+        },
+        {
+          "vcmId": "fb3f254a63098310VgnVCM2000002a0c10acRCRD",
+          "title": "ילדות 2 ",
+          "url": "https://www.mako.co.il/mako-vod-keshet/parliament-s1/shorts/Video-fb3f254a6309831006.htm",
+          "duration": "01:33",
+          "season": 1,
+          "lines": []
+        }
+      ]
+    }
+  ]
+}

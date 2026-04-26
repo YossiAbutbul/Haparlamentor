@@ -10,10 +10,11 @@ import { ResultsList } from "@/components/ResultsList";
 import { NoSignal } from "@/components/NoSignal";
 
 import { search } from "@/lib/search";
-import type { Short } from "@/lib/types";
-import shortsJson from "@/public/mock/shorts.json";
+import type { Database } from "@/lib/types";
+import dbJson from "@/public/data/db.json";
 
-const SHORTS = shortsJson as Short[];
+const DB = dbJson as Database;
+const SHORTS = DB.seasons.flatMap((s) => s.shorts);
 
 export default function Home() {
   const [query, setQuery] = useState("");

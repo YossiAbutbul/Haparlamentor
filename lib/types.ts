@@ -13,6 +13,15 @@ export type Short = {
   lines: TranscriptLine[];
 };
 
+export type Season = {
+  season: number;
+  shorts: Short[];
+};
+
+export type Database = {
+  seasons: Season[];
+};
+
 export type SearchHit = {
   short: Short;
   lineIndex: number;
