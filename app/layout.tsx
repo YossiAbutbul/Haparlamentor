@@ -30,7 +30,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="he" dir="rtl" className={`${heebo.variable} ${assistant.variable} ${mono.variable}`}>
-      <body>{children}</body>
+      <body>
+        <div className="scroll-root">{children}</div>
+      </body>
     </html>
   );
 }

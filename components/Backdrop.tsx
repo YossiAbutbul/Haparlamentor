@@ -4,7 +4,11 @@ const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export function Backdrop({ dim = "soft" }: { dim?: "soft" | "heavy" }) {
   return (
-    <div className="fixed inset-0 overflow-hidden bg-black" style={{ zIndex: 0 }} aria-hidden>
+    <div
+      className="fixed overflow-hidden bg-black"
+      style={{ zIndex: 0, top: 0, left: 0, width: "100vw", height: "100dvh" }}
+      aria-hidden
+    >
       <div
         className="absolute inset-0 bg-cover"
         style={{
