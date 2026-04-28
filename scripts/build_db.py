@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 """
 Build runtime DB from data/ directory.
 

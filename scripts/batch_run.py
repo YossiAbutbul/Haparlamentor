@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 """
 Batch fetch + transcribe for all shorts in a season that have an m3u8 URL.
 
