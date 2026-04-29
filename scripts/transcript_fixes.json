@@ -1,0 +1,20 @@
+{
+  "skip_files": [
+    "074f2ec408768310VgnVCM2000002a0c10acRCRD.txt",
+    "0a48c88824098310VgnVCM2000002a0c10acRCRD.txt",
+    "151f2ec408768310VgnVCM2000002a0c10acRCRD.txt",
+    "02067ffd1954a310VgnVCM2000002a0c10acRCRD.txt",
+    "04e8c88824098310VgnVCM2000002a0c10acRCRD.txt"
+  ],
+  "safe_replacements": {
+    "אקטור": "הקטור",
+    "רקטור": "הקטור",
+    "ריקטור": "הקטור",
+    "תקקטור": "הקטור",
+    "קראקו": "קרקו",
+    "שאוליה": "שאולי"
+  },
+  "review_only": {
+    "עמציה": "אמציה (verify in audio — possible legit variant)"
+  }
+}
